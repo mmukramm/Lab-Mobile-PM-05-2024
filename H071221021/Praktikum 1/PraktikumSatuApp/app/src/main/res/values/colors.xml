@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="darkgreen">#FF114232</color>
+    <color name="lime">#FF87A922</color>
+    <color name="mustard">#FFFCDC2A</color>
+    <color name="beige">#FFF7F6BB</color>
+    <color name="cream">#FFFFF3C7</color>
+    <color name="coklatsusu">#FFFEC7B4</color>
+    <color name="pinkpucat">#FFFC819C</color>
+    <color name="pink">#FFF7418F</color>
+</resources>
