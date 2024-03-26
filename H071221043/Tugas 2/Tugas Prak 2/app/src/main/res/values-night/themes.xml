@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TgsPrak2" parent="Theme.Material3.DayNight">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/button</item>
+        <item name="colorSecondary">@color/white</item>
+    </style>
+    <style name="button" >
+        <item name="backgroundTint">@color/button</item>
+        <item name="android:textColor">@color/font</item>
+    </style>
+</resources>
