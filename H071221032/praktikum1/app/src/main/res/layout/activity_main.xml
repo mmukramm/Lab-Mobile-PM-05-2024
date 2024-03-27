@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Pribadi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="30dp"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/pfp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_9387"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/namaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/pfp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="20dp"
+        android:text="Nama: Terry"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/genderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/namaText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="20dp"
+        android:text="Jenis Kelamin: "
+        android:textSize="18sp"/>
+
+    <RadioGroup
+        android:id="@+id/genderSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/genderText"
+        app:layout_constraintTop_toBottomOf="@+id/genderText"
+        android:layout_marginLeft="10dp">
+
+        <RadioButton
+            android:id="@+id/genderMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jantan"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/genderFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Betina"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/interest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/genderSelect"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Hal Kesukaan: "
+        android:textSize="18sp"/>
+
+    <CheckBox
+        android:id="@+id/food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/interest"
+        app:layout_constraintTop_toBottomOf="@+id/interest"
+        android:layout_margin="10dp"
+        android:text="Whiskas"
+        android:textSize="18sp"/>
+
+    <CheckBox
+        android:id="@+id/charger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kabel Cas"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/food"
+        app:layout_constraintTop_toBottomOf="@+id/food" />
+
+    <CheckBox
+        android:id="@+id/other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lainnya"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/charger"
+        app:layout_constraintTop_toBottomOf="@+id/charger" />
+
+    <EditText
+        android:id="@+id/otherInput"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:hint="Masukkan hal lainnya"
+        app:layout_constraintStart_toStartOf="@+id/other"
+        app:layout_constraintTop_toBottomOf="@+id/other"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/submitText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        app:layout_constraintBottom_toBottomOf="@+id/otherInput"
+        app:layout_constraintStart_toEndOf="@+id/otherInput"
+        app:layout_constraintTop_toTopOf="@+id/otherInput"
+        android:layout_margin="15dp"/>
+
+    <ListView
+        android:id="@+id/otherList"
+        android:layout_width="240dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@+id/otherInput"
+        app:layout_constraintTop_toBottomOf="@+id/otherInput"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="5dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
